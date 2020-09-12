@@ -1,0 +1,89 @@
+--><!DOCTYPE html><--
+<style>
+.red{
+  font-size:50px;
+  padding:30px;
+  background-color:#8907;
+  font-family:monospace;
+}
+.blue{
+  font-size:20px;
+  font-family:sarif;
+  color:#374
+}
+
+.white{
+  background-color:#7395;
+  font-family:times new roman;
+  padding:30px;
+  font-size:25px;
+}
+.border{
+  border-color: red;
+  border-style: bold;
+}
+.black{
+  
+}
+
+body{
+  background-color:lightblue;
+  text-align:center;
+}    
+    </style>
+
+<head>
+  <title>Survey Form</title>
+</head>
+
+
+<body >
+  <h1 id="title" class='red'>Survey Form</h1>
+ 
+    <p id="description" class='blue'>This form is used to get the inputs from the user for the data there will be no miss communtication thank you</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label><br>
+    <input type="text" id="name"           placeholder="name" required><br><br>
+    <label for="email"  id="email-label">Mail-id:</label><br>
+    <input type="email" id="email" placeholder="email" required><br><br>
+    <label for="number" id="number-label">Number:</label><br>
+    <input type="number" id="number" placeholder="number" min="1" max="10" requried><br><br>
+    
+    
+    
+    <h4 class='blue'>Select the gender</h4>
+    <input type="radio" id="male" value="male" name="gender">
+    <label for="male">Male</label><br>
+    <input type="radio" id="femlae" value="female" name="gender">
+    <label for="female">Female</label><br>
+    <input type="radio" id="others"  value="others" name="gender">
+    <label for="others">others</label><br><br><br>
+    
+    <label for="dropdown" class='blue'>which are your intrest</label><br>
+    <select name="intrest" id="dropdown"><br>
+      <option value="web developing">Web Devolping</option>
+      <option value="machine lerninig"> Machine Lerning</option>
+      <option value="python"> Python</option>
+      <option value="java"> Java</option>
+    </select>
+    
+    <h4 class=''>which type of person</h4>
+    <label for="care">Care</label>
+    <input type="checkbox" id="care" value="care" name="personality"><br>
+    <label for="rude">Rude</label>
+    <input type="checkbox" id="rude" value="rude" name="personality"><br>
+    <label for="sad">Sad</label>
+    <input type="checkbox" id="sad" value="sad" name="personality"><br><br><br>
+    
+    <label for="comments">Comments :</label><br>
+    <textarea id="comments" name="textarea" cols="40" rows="10"></textarea><br>
+    
+                                                                      
+    
+
+   
+    <button type="submit" form="Survey-form" id="submit" value="submit">Submit</button><br><br>
+  </form>
+  <footer class='white border'>@copyrights surveyform(2020)</footer> 
+</body>
+</html>
